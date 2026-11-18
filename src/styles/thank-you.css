@@ -1,0 +1,92 @@
+/* Thank-you page. Colours and fonts come from the variables in base.css */
+.ty {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px 40px;
+  background: var(--bg);
+}
+.ty-brand {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+.ty-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--card);
+  border-radius: 24px;
+  padding: 36px 32px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 18px 48px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+.ty-tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  margin-bottom: 16px;
+}
+.ty-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+.ty-muted { color: var(--muted); margin: 0; }
+.ty-loading { margin-top: 80px; }
+.ty-items {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  text-align: left;
+  border-top: 1px solid var(--line);
+}
+.ty-items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+}
+.ty-discount { color: var(--accent); }
+.ty-total { font-weight: 600; border-bottom: none !important; }
+.ty-note {
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--soft);
+  font-size: 14px;
+  text-align: left;
+}
+.ty-ship, .ty-next { text-align: left; margin-top: 24px; }
+.ty-ship h2, .ty-next h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+.ty-ship p { margin: 0; line-height: 1.6; font-size: 15px; }
+.ty-next ol { margin: 0; padding-left: 20px; line-height: 1.7; font-size: 15px; }
+.ty-button, .ty-link {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+}
+.ty-link { background: none; color: var(--ink); text-decoration: underline; padding: 0; }
+.ty-foot { margin-top: auto; padding-top: 32px; font-size: 12px; color: var(--muted); }
